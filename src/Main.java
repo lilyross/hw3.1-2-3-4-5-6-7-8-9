@@ -116,19 +116,23 @@ public class Main {
             int one = 1;
             int two = 2;
             int tree = 3;
-            boolean aLargerNumber = (one < two && one < tree);
+            boolean aLargerNumber = (one < two && one > tree);
             if (aLargerNumber) {
-                System.out.println(" не больше трех ");
+                System.out.println(one + " Большее число ");
             } else {
-                System.out.println(" больше трех ");
+                System.out.println( one + " Не большее число ");
             }
-            boolean aLargerNumber1 = (two > one && two < tree);
+            boolean aLargerNumber1 = (two > one && two > tree);
             if (aLargerNumber1) {
-                System.out.println(" Большее число ");
+                System.out.println(two + " Большее число ");
+            } else {
+                System.out.println( two + " Не большее число ");
             }
-            boolean aLargerNumber2 = (one < tree && two < tree);
+            boolean aLargerNumber2 = (tree > one && two < tree);
             if (aLargerNumber2) {
-                System.out.println(" Большее число ");
+                System.out.println(tree + " Большее число ");
+            } else {
+                System.out.println(tree + " Не большее число ");
             }
         }
     }
